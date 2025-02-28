@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="@style/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="@dimen/_30sdp"
+        android:src="@mipmap/ic_launcher" />
+
+    <EditText
+        android:id="@+id/main_username"
+        style="@style/edit_15"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/main_password"
+        style="@style/edit_15"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLength="15" />
+
+    <TextView
+        style="@style/text_15"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:text="Forgot Password?" />
+
+    <Button
+        android:id="@+id/main_login"
+        style="@style/button_16"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:backgroundTint="@color/blue"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/main_signup"
+        style="@style/button_16"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:backgroundTint="@color/yellow"
+        android:text="No Account Yet? Signup Now" />
+
+    <Button
+        android:id="@+id/main_users"
+        style="@style/button_16"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:backgroundTint="@color/blue"
+        android:text="User Data With Listview" />
+
+    <Button
+        android:id="@+id/main_recycler"
+        style="@style/button_16"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:backgroundTint="@color/blue"
+        android:text="User Data With Recyclerview" />
+
+</LinearLayout>
