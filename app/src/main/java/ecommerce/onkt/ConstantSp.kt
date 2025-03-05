@@ -3,7 +3,7 @@ package ecommerce.onkt
 class ConstantSp {
 
     companion object {
-        val BASE_URL: String = "http://192.168.1.54/FinalInternshipOn/"
+        val BASE_URL: String = "http://192.168.1.31/FinalInternshipOn/"
         val SIGNUP_URL: String = BASE_URL + "signup.php"
         val LOGIN_URL: String = BASE_URL + "login.php"
         val UPDATE_PROFILE_URL: String = BASE_URL + "updateProfile.php"

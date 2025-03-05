@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
                     if(response.body()!!.status!!){
                         Toast.makeText(this@MainActivity, response.body()!!.message,Toast.LENGTH_SHORT).show()
                         val i = 0;
-                        for(i in 0..response.body()!!.userData!!.size){
+                        for(i in 0..response.body()!!.userData!!.size-1){
                             sp.edit().putString(ConstantSp.USERID, response.body()!!.userData!!.get(i).userid).commit()
                             sp.edit().putString(ConstantSp.FIRSTNAME, response.body()!!.userData!!.get(i).firstName).commit()
                             sp.edit().putString(ConstantSp.LASTNAME, response.body()!!.userData!!.get(i).lastName).commit()
